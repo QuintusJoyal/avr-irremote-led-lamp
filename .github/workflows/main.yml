@@ -1,0 +1,25 @@
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: install avr tool chain
+        run: |
+          sudo apt-get update \
+          && sudo apt-get install -y \
+          avrdude \
+          gcc-avr \
+          gdb-avr \
+          avr-libc \
+          binutils-avr
+      - name: make
+        run: make all
