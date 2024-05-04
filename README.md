@@ -19,7 +19,7 @@ This project implements an infrared (IR) remote-controlled LED system using an A
 - 7x 330 Ohms resistors
 - 1x IR remote control
 - 1x Power supply (9V)
-
+---
 >For PCB
 >- 2x 20pf ceramic capacitors
 >- 2x 10uf 50V electrolytic capacitor
@@ -31,7 +31,7 @@ This project implements an infrared (IR) remote-controlled LED system using an A
 >- 1x 1x5 Female header SIL
 >- 1x 7805 5V voltage regulator
 >- 1x ATMEGA328P IC
-
+---
 ## Diagram
 ||
 |:--:|
@@ -65,7 +65,21 @@ make all
 ```bash
 make flash
 ```
-
+---
+>Build the docker image for easy toolchain deployment
+>1. Build the image
+>```
+>docker build -f Dockerfile -t avr-dev .
+>```
+>2. Run the container
+>```
+>docker run --rm -it --name avr-dev --device=/dev/ttyACM0 avr-dev
+>```
+>3. Flash
+>```
+>make flash
+>```
+---
 ## Usage
 
 1. Power on the system.
