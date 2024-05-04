@@ -29,12 +29,13 @@ ________________________________________________________________________________
 
 #define BRIGHTNESS_STEP (uint8_t) 50 // Step size for adjusting brightness
 
-#define true 1
-#define false 0
+#define true 1 // define boolean true
+#define false 0 //define boolean false
 
+typedef uint8_t bool; // define a bool type
 static uint8_t brightness = 20; // Initial brightness level
 static uint8_t level = 0; // Initial LED level
-static uint8_t level_is_increased; // flag for finding the trend
+static bool level_is_increased; // flag for finding the trend
 
 void LED_brightness();
 void LED_turn_on(uint8_t led);

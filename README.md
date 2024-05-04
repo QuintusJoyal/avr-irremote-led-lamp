@@ -12,18 +12,38 @@ This project implements an infrared (IR) remote-controlled LED system using an A
 ## Hardware Requirements
 
 - AVR microcontroller (e.g., ATmega328P or Arduino uno)
-- 1x IR receiver module
+- 1x IR receiver (VS1838B)
 - 5x LEDs
   - 4x single-color
   - 1x RKGB
-- 7x 330 Ohm resistors
+- 7x 330 Ohms resistors
 - 1x IR remote control
 - 1x Power supply (9V)
 
+>For PCB
+>- 2x 20pf ceramic capacitors
+>- 2x 10uf 50V electrolytic capacitor
+>- 1x 16Mhz crystal osclilator
+>- 1x 100 Ohms resistors
+>- 2x 10k Ohms resistors
+>- 1x PCB mount DC jack
+>- 1x 28 pin IC socket
+>- 1x 1x5 Female header SIL
+>- 1x 7805 5V voltage regulator
+>- 1x ATMEGA328P IC
+
 ## Diagram
-
-![Diagram](Diagram.png)
-
+||
+|:--:|
+|Prototype|
+|![Diagram](assets/Diagram.png)|
+||
+|PCB|
+|![PCB](assets/PCB.png)|
+||
+|Pinout|
+|![Components](assets/Components.png)|
+||
 ## Software Requirements
 
 - AVR-GCC toolchain
