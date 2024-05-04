@@ -83,39 +83,39 @@ ________________________________________________________________________________
 #define USE_LOGARITHMIC_ARRAY			FALSE
 
 // Mapping channels to pin and ports
-#define SOFTPWM_CHANNEL0_DDR			DDRD
-#define SOFTPWM_CHANNEL0_PORT			PORTD
-#define SOFTPWM_CHANNEL0_PIN			4
-#define SOFTPWM_CHANNEL0_PIN_STATES		pinlevelD
+#define SOFTPWM_CHANNEL0_DDR			DDRC
+#define SOFTPWM_CHANNEL0_PORT			PORTC
+#define SOFTPWM_CHANNEL0_PIN			1
+#define SOFTPWM_CHANNEL0_PIN_STATES		pinlevelC
 
-#define SOFTPWM_CHANNEL1_DDR			DDRD
-#define SOFTPWM_CHANNEL1_PORT			PORTD
-#define SOFTPWM_CHANNEL1_PIN			5
-#define SOFTPWM_CHANNEL1_PIN_STATES		pinlevelD
+#define SOFTPWM_CHANNEL1_DDR			DDRC
+#define SOFTPWM_CHANNEL1_PORT			PORTC
+#define SOFTPWM_CHANNEL1_PIN			0
+#define SOFTPWM_CHANNEL1_PIN_STATES		pinlevelC
 
-#define SOFTPWM_CHANNEL2_DDR			DDRD
-#define SOFTPWM_CHANNEL2_PORT			PORTD
-#define SOFTPWM_CHANNEL2_PIN			6
-#define SOFTPWM_CHANNEL2_PIN_STATES		pinlevelD
+#define SOFTPWM_CHANNEL2_DDR			DDRB
+#define SOFTPWM_CHANNEL2_PORT			PORTB
+#define SOFTPWM_CHANNEL2_PIN			5
+#define SOFTPWM_CHANNEL2_PIN_STATES		pinlevelB
 
-#define SOFTPWM_CHANNEL3_DDR			DDRD
-#define SOFTPWM_CHANNEL3_PORT			PORTD
-#define SOFTPWM_CHANNEL3_PIN			7
-#define SOFTPWM_CHANNEL3_PIN_STATES		pinlevelD
+#define SOFTPWM_CHANNEL3_DDR			DDRB
+#define SOFTPWM_CHANNEL3_PORT			PORTB
+#define SOFTPWM_CHANNEL3_PIN			4
+#define SOFTPWM_CHANNEL3_PIN_STATES		pinlevelB
 
 #define SOFTPWM_CHANNEL4_DDR			DDRB
 #define SOFTPWM_CHANNEL4_PORT			PORTB
-#define SOFTPWM_CHANNEL4_PIN			2
+#define SOFTPWM_CHANNEL4_PIN			3
 #define SOFTPWM_CHANNEL4_PIN_STATES		pinlevelB
 
 #define SOFTPWM_CHANNEL5_DDR			DDRB
 #define SOFTPWM_CHANNEL5_PORT			PORTB
-#define SOFTPWM_CHANNEL5_PIN			3
+#define SOFTPWM_CHANNEL5_PIN			2
 #define SOFTPWM_CHANNEL5_PIN_STATES		pinlevelB
 
 #define SOFTPWM_CHANNEL6_DDR			DDRB
 #define SOFTPWM_CHANNEL6_PORT			PORTB
-#define SOFTPWM_CHANNEL6_PIN			4
+#define SOFTPWM_CHANNEL6_PIN			1
 #define SOFTPWM_CHANNEL6_PIN_STATES		pinlevelB
 
 #define SOFTPWM_CHANNEL7_DDR			0
@@ -135,14 +135,14 @@ ________________________________________________________________________________
 
 // Which ports are used
 #define SOFTPWM_ON_PORT_B				TRUE
-#define SOFTPWM_ON_PORT_C				FALSE
-#define SOFTPWM_ON_PORT_D				TRUE
+#define SOFTPWM_ON_PORT_C				TRUE
+#define SOFTPWM_ON_PORT_D				FALSE
 #define SOFTPWM_ON_PORT_E				FALSE
 
 // What pins are on this ports
-#define SOFTPWM_PINS_PORTB				_BV(2) | _BV(3) | _BV(4)
-#define SOFTPWM_PINS_PORTC				FALSE
-#define SOFTPWM_PINS_PORTD				_BV(4) | _BV(5) | _BV(6) | _BV(7)
+#define SOFTPWM_PINS_PORTB				_BV(1) | _BV(2) | _BV(3) | _BV(4) | _BV(5)
+#define SOFTPWM_PINS_PORTC				_BV(0) | _BV(1)
+#define SOFTPWM_PINS_PORTD				FALSE
 #define SOFTPWM_PINS_PORTE				FALSE
 
 
